@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Bootcamp</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!--iconlar için eklediğimiz link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <!--bootstrap css için eklediğimiz link-->
+  <link rel="stylesheet" href="/style/style.css" />
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark pt-2 fixed-top">
+    <!--lg ile large ekran aşağısındaki özellikleri ayarladık-->
+    <div class="container">
+      <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+      <!--proje adı, ürün ,şirket adı vs için -->
+      <button class="navbar-toggler" type="button" data-bs-target="#navmenu" data-bs-toggle="collapse">
+        <!--açılır kapanır olayını toggler ile sağladık.-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <!-- navbar içeriklerini breakpointe göre gruplamak ve gizlemek için -->
+        <ul class="navbar-nav ms-auto">
+          <!--otomatik kenar boşlukları aracılığıyla öğeleri sola itme (.ms-auto)kullandık,yatayda hareket etmek için kullanılabilir.-->
+          <li class="nav-item">
+            <a href="#learn" class="nav-link">What You'll learn</a>
+          </li>
+          <li class="nav-item">
+            <a href="#questions" class="nav-link">Questions</a>
+          </li>
+          <li class="nav-item">
+            <a href="#instructors" class="nav-link">Instructor</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--showcase-->
+  <section class="bg-dark text-light p-5 text-center text-md-start">
+    <!--medium ve daha geniş ekranlarda ;text-start, küçük ekranlarda; text-center-->
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <!--medium ve daha geniş ekranlarda flex özelliğini kullandık.-->
+        <div>
+          <h1>Become a <span class="text-warning">Web Developer</span></h1>
+          <p class="lead my-4">
+            We focus on teaching our students the fundemantals of the latest
+            and the greatest technologies to prepare them for their first dev
+            role.
+          </p>
+          <button class="btn btn-lg btn-primary">Start The Enrollment</button>
+        </div>
+        <img class="img-fluid rounded-3 d-none d-md-block" src="images/icon.jpg" alt="programmer-icon" />
+        <!--medium ve daha geniş ekranlarda display-block özelliği hakimken, daha küçük ekranlarda; display-none ile resmi yokettik.-->
+      </div>
+    </div>
+  </section>
+  <!--newsletter-->
+  <section class="bg-primary text-light p-4">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class=>Sign Up For Our Newsletter</h3>
+        <div class="input-group mb-3 news-input">
+          <input type="text" class="form-control" placeholder="Enter email">
+          <button class="btn btn-dark btn-lg " type="button" id="button-addon2">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--boxes-->
+  <section class="p-2">
+    <div class="container ">
+      <div class="row text-center">
+        <div class="col-md">
+          <div class="card bg-dark text-light m-4 box-size">
+            <div class="card-body text-center">
+              <div class="h1 mb-3"><i class="bi bi-laptop p-4"></i></div>
+
+              <h5 class="card-title">Virtual</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md ">
+          <div class="card bg-secondary text-light m-4 box-size">
+
+            <div class="card-body">
+              <div class="h1 mb-3"><i class="bi bi-person-square"></i></div>
+
+              <h5 class="card-title">Hybrid</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-dark text-light m-4 box-size">
+            <div class="card-body">
+              <div class="h1 mb-3"><i class="bi bi-people p-4"></i></div>
+              <h5 class="card-title">In Person</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--learn section-->
+  <section id="learn" class="p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center ">
+        <div class="img-fluid"> <img src="./img.jpeg" alt="js" style="width:430px ;"></div>
+        <div style="width:550px ;">
+          <h1>Learn The Fundamentals</h1>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis impedit, aspernatur optio
+            odit sapiente doloremque?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur ipsa quidem itaque, sapiente eligendi
+            voluptate omnis nostrum at nemo enim!</p>
+          <a href="#" class="btn btn-light"><i class="bi bi-chevron-right"></i> Read More</a>
+
+        </div>
+      </div>
+  </section>
+  <!--learn section 2-->
+  <section id="learn" class="p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center ">
+        <div>
+          <h1>Learn React</h1>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis impedit, aspernatur optio
+            odit sapiente doloremque?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur ipsa quidem itaque, sapiente eligendi
+            voluptate omnis nostrum at nemo enim!</p>
+        </div>
+        <div class="img-fluid"> <img src="./react.png" alt="js" style="width:430px ;"> <a href="#"
+            class="btn btn-light"><i class="bi bi-chevron-right"></i> Read More</a></div>
+      </div>
+  </section>
+
+  <!--questions-->
+  <section id="questions">
+    <div class="container">
+      <h1 class="text-center"> Frequently Asked Questions</h1>
+      <div class="accordion accordion-flush" id="questions">
+        <!--item 1-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-one">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <!--item 2-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-two">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+              filled with some actual content.</div>
+          </div>
+        </div>
+        <!--item 3-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-three">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+              happening here in terms of content, but just filling up the space to make it look, at least at first
+              glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--instructor section-->
+  <section class="bg-primary" id="instructors">
+    <div class="container text-center text-light p-5">
+      <h2>Our Instructors</h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, beatae.</p>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <!--card1-->
+          <div class="card text-center text-dark p-3">
+            <img src="./tom.jpg" class="card-img-top rounded-circle mx-auto " alt="tom"
+              style="width:100px ;height:90px">
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptatibus.</p>
+              <a href="#" class="btn"><i class="bi bi-twitter text-dark"></i>
+                <a href="#" class="btn"><i class="bi bi-linkedin text-dark"></i>
+                  <a href="#" class="btn"><i class="bi bi-facebook text-dark"></i>
+                    <a href="#" class="btn"><i class="bi bi-instagram text-dark"></i>
+                    </a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-6">
+          <!--card2-->
+          <div class="card text-center text-dark p-3">
+            <img src="./dua.jpg" class="card-img-top rounded-circle mx-auto " alt="tom"
+              style="width:100px ;height:90px">
+            <div class="card-body">
+              <h5 class="card-title">Jane Doe</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptatibus.</p>
+              <a href="#" class="btn"><i class="bi bi-twitter text-dark"></i>
+                <a href="#" class="btn"><i class="bi bi-linkedin text-dark"></i>
+                  <a href="#" class="btn"><i class="bi bi-facebook text-dark"></i>
+                    <a href="#" class="btn"><i class="bi bi-instagram text-dark"></i>
+                    </a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-6">
+          <!--card3-->
+          <div class="card text-center text-dark p-3">
+            <img src="./jared.jpg" class="card-img-top rounded-circle mx-auto " alt="tom"
+              style="width:100px ;height:90px">
+            <div class="card-body">
+              <h5 class="card-title">Steve Smith</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptatibus.</p>
+              <a href="#" class="btn"><i class="bi bi-twitter text-dark"></i>
+                <a href="#" class="btn"><i class="bi bi-linkedin text-dark"></i>
+                  <a href="#" class="btn"><i class="bi bi-facebook text-dark"></i>
+                    <a href="#" class="btn"><i class="bi bi-instagram text-dark"></i>
+                    </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <!--card4-->
+          <div class="card text-center text-dark p-3">
+            <img src="./phoebe.webp" class="card-img-top rounded-circle mx-auto " alt="tom"
+              style="width:100px ;height:90px">
+            <div class="card-body">
+              <h5 class="card-title">Sara Smith</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptatibus.</p>
+              <a href="#" class="btn"><i class="bi bi-twitter text-dark"></i>
+                <a href="#" class="btn"><i class="bi bi-linkedin text-dark"></i>
+                  <a href="#" class="btn"><i class="bi bi-facebook text-dark"></i>
+                    <a href="#" class="btn"><i class="bi bi-instagram text-dark"></i>
+                    </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--contact and map-->
+  <section class="p-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="text-center">
+          <ul class="list-group">
+            <h2 class="mb-3">Contact-info</h2>
+
+          </ul>
+          <li class="list-group-item">
+            <span class="fw-bold">Main Location:</span> 50 Main st. Boston MA
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Main Location:</span> 50 Main st. Boston MA
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Main Location:</span> 50 Main st. Boston MA
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Main Location:</span> 50 Main st. Boston MA
+          </li>
+        </div>
+        <div><img src="./map.jfif" alt="map"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+  <!--bootstrap Js için eklediğimiz link-->
+</body>
+
+</html>

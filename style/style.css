@@ -1,0 +1,15 @@
+@media(min-width:768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+/* 768 pxe düşene kadar width %50 olacak.*/
+@media (max-width:768px){
+    .box-size{
+        width:50%;
+        margin:2rem auto !important;
+        
+    }
+}
+/* 768 px ve daha küçük ekranlarda width %50 olacak.*/
